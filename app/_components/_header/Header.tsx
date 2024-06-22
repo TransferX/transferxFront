@@ -12,8 +12,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 
 export const Header = () => {
   return (
-    <Popover className="container mx-auto flex items-center  h-24">
-      <h1 className=" text-3xl text-cinzaMedio font-extrabold">TransferX</h1>
+    <Popover className="flex items-center h-24 p-4 sm:mx-auto sm:container">
+      <h1 className=" text-2xl text-cinzaMedio font-extrabold">TransferX</h1>
       <div className="grow ">
         <div className=" hidden sm:flex items-center justify-center gap-2 md:gap-8 text-cinzaMedio font-bold ">
           <Link href="#">Como Transferir</Link>
