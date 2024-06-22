@@ -7,14 +7,14 @@ const LoginForm = () => {
     <form className="flex flex-col">
       <Input
         label="E-mail"
-        placeholder="Ex: mateus@gmail.com"
+        placeholder="Digite seu e-mail"
         id="email"
         name="email"
         type="email"
       />
       <Input
         label="Senha"
-        placeholder="Digite a senha"
+        placeholder="Digite sua senha"
         id="senha"
         name="senha"
         type="password"
@@ -44,11 +44,11 @@ const LoginForm = () => {
         </svg>{" "}
       </button>
 
-      <div className="my-10 flex justify-between">
-        <Link href="#" className="text-cinzaClaro text-sm ">
+      <div className="my-6 flex gap-3">
+        <span className="text-cinzaClaro text-sm ">
           Não tem uma conta?
-        </Link>
-        
+        </span>
+
         <Link href="http://www.localhost:3000/registrar" className="text-cinzaEscuro text-sm font-semibold ">
           Criar uma conta
         </Link>
