@@ -251,7 +251,7 @@ const HomeTeste = () => {
         </div>
       </footer>
 
-      <div className="container mx-auto flex items-center justify-center my-9">
+      <div className="container mx-auto flex items-center justify-center my-4">
       Copyright 2024 © TransferX, All Rights Reserved.
       </div>
     </>
