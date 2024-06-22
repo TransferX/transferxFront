@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../_components/_header/Header";
+import { Header } from "../_components/header/Header";
 import Image from "next/image";
 
 import volcanoImage from "/public/assets/volcano.png";
@@ -167,7 +167,7 @@ const HomeTeste = () => {
               Tornamos todo o processo eficiente e simples, proporcionando uma
               experiência tranquila e segura para nossos usuários.
             </p>
-            <div className="mt-14 md:text-end">
+            <div className="my-14 md:text-end">
               <Link
                 className="font-semibold bg-cinzaEscuro text-white py-3.5 px-5 rounded-xl"
                 href="#"
@@ -207,7 +207,7 @@ const HomeTeste = () => {
       </section>
 
       <footer className="mt-14 p-4 lg:px-4 lg:py-0 lg:mt-8 lg:container lg:mx-auto items-center">
-        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between items-center">
+        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between xlitems-center">
           <h2 className=" text-3xl text-cinzaMedio font-extrabold">
             TransferX
           </h2>
