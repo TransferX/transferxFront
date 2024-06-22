@@ -6,7 +6,7 @@ import volcanoImage from "/public/assets/volcano.png";
 import instagramSvg from "/public/assets/instagram.svg";
 import monsterImage from "/public/assets/monster.png";
 import patineteImage from "/public/assets/patineteImage.png";
-import veiculoIcone from "/public/assets/veiculoicon.svg";
+import veiculoIcone from "/public/assets/veiculoIcon.svg";
 import documentoIcone from "/public/assets/documentoIcon.svg";
 import concluirIcone from "/public/assets/concluirIcon.svg";
 import Link from "next/link";
