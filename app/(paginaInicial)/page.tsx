@@ -11,7 +11,7 @@ import documentoIcone from "/public/assets/documentoIcon.svg";
 import concluirIcone from "/public/assets/concluirIcon.svg";
 import Link from "next/link";
 
-const HomeTeste = () => {
+const Home = () => {
   return (
     <>
       <Header />
@@ -179,7 +179,7 @@ const HomeTeste = () => {
         </div>
       </section>
 
-      <section className="mt-20 p-2 xl:container xl:mx-auto">
+      <section className="mt-20 p-2 md:container md:mx-auto md:max-w-[50%]">
         <div className="bg-gradient-to-r from-black/35 to-cinzaEscuro rounded-2xl  p-4">
           <div className=" flex justify-between">
             <h2 className="mt-2 font-extrabold text-white text-2xl lg:text-4xl">
@@ -206,7 +206,7 @@ const HomeTeste = () => {
         </div>
       </section>
 
-      <footer className="mt-14 p-4 lg:px-4 lg:py-0 lg:mt-8 lg:container lg:mx-auto items-center">
+      <footer className="mt-14 p-4 lg:px-4 lg:py-0 lg:mt-12 lg:container lg:mx-auto items-center">
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between xlitems-center">
           <h2 className=" text-3xl text-cinzaMedio font-extrabold">
             TransferX
@@ -252,4 +252,4 @@ const HomeTeste = () => {
   );
 };
 
-export default HomeTeste;
+export default Home;

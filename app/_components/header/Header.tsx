@@ -99,10 +99,10 @@ export const Header = () => {
       </PopoverPanel>
       </Transition>
       <div className="hidden sm:block">
-        <Link className="mr-2 font-bold " href="#">
+        <Link className="mr-2 font-bold " href="http://www.localhost:3000/entrar">
           Entrar
         </Link>
-        <Link className="font-bold bg-vermelho text-white py-2.5 px-3.5 rounded-md" href="#">
+        <Link className="font-bold bg-vermelho text-white py-2.5 px-3.5 rounded-md" href="http://www.localhost:3000/registrar">
           Registrar
         </Link>
       </div>
