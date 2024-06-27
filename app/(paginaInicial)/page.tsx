@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../_components/header/Header";
+import { HeaderLandingPage } from "../_components/headers/HeaderLandingPage";
 import Image from "next/image";
 
 import volcanoImage from "/public/assets/volcano.png";
@@ -14,7 +14,7 @@ import Link from "next/link";
 const Home = () => {
   return (
     <>
-      <Header />
+      <HeaderLandingPage />
 
       <section className="flex flex-col items-center p-4 md:container md:mx-auto md:p-0 md:mt-14 lg:flex-row lg:justify-between lg:container lg:mx-auto lg:items-start xl:gap-24 ">
         <div className="lg:max-w-[50%] lg:p-4">

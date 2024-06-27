@@ -10,7 +10,8 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 
-export const Header = () => {
+export const HeaderLandingPage
+ = () => {
   return (
     <Popover className="flex items-center h-24 p-4 sm:mx-auto sm:container">
       <h1 className=" text-2xl text-cinzaMedio font-extrabold">TransferX</h1>

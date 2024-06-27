@@ -5,7 +5,8 @@ import Link from "next/link";
 const CadastroForm = () => {
   return (
     <form className="">
-        <div className="md:flex w-full gap-4 mb-4">
+      <h3 className="mt-6 text-cinzaMedio font-bold text-lg">Dados Pessoais</h3>
+      <div className="md:flex w-full gap-4 mb-2">
         <div className="md:flex-1">
           <Input
             label="Nome"
@@ -26,9 +27,7 @@ const CadastroForm = () => {
         </div>
       </div>
 
-
-
-      <div className="md:flex w-full gap-4 mb-4">
+      <div className="md:flex w-full gap-4 mb-2">
         <div className="md:flex-1">
           <Input
             label="E-mail"
@@ -49,7 +48,7 @@ const CadastroForm = () => {
         </div>
       </div>
 
-      <div className="md:flex w-full gap-4 mb-4">
+      <div className="md:flex w-full gap-4 mb-2">
         <div className="md:flex-1">
           <Input
             label="Senha"
@@ -69,15 +68,77 @@ const CadastroForm = () => {
           />
         </div>
       </div>
+      <h3 className="mt-6 text-cinzaMedio font-bold">Endereço</h3>
 
-      <Input
-        label="Endereço"
-        placeholder="Ex: Rua das flores, 34 - Curitiba, Paraná"
-        id="endereco"
-        name="endereco"
-        type="text"
-        className="mb-4"
-      />
+      <div className="md:flex w-full gap-4 mb-2">
+        <div className="md:flex-1">
+          <Input
+            label="Cidade"
+            placeholder="Digite sua Cidade"
+            id="cidade"
+            name="cidade"
+            type="text"
+          />
+        </div>
+
+        <div className="md:flex-1">
+       
+
+<Input
+            label="Bairro"
+            placeholder="PR"
+            id="bairro"
+            name="bairro"
+            type="text"
+            className=""
+          />
+        </div>
+      </div>
+
+      <div className="md:flex w-full gap-4 mb-2">
+        <div className="md:flex-1">
+          <Input
+            label="Logradouro"
+            placeholder="Digite seu Logradouro"
+            id="logradouro"
+            name="logradouro"
+            type="text"
+          />
+        </div>
+        <div className="md:flex-1">
+          <Input
+            label="Número"
+            placeholder="Número"
+            id="Número"
+            name="Número"
+            type="text"
+            className="w-[100%]"
+          />
+
+          
+        </div>
+
+        <div className="md:flex-1">
+        <Input
+            label="Estado"
+            placeholder="PR"
+            id="estado"
+            name="estado"
+            type="text"
+            className=""
+          />
+        </div>
+      </div>
+      <div className="md:flex-1">
+        <Input
+          label="Código Postal"
+          placeholder="Código Postal"
+          id="codigoPostal"
+          name="codigoPostal"
+          type="text"
+          className=""
+        />
+      </div>
 
       <div className="flex  gap-2 items-start ">
         <input type="checkbox" name="" id="" className="mt-1" />
@@ -105,11 +166,12 @@ const CadastroForm = () => {
       </button>
 
       <div className="my-6 flex gap-3 ">
-        <span className="text-cinzaClaro text-sm ">
-          Já tem uma conta?
-        </span>
+        <span className="text-cinzaClaro text-sm ">Já tem uma conta?</span>
 
-        <Link href="http://www.localhost:3000/entrar" className="text-cinzaEscuro text-sm font-semibold ">
+        <Link
+          href="http://www.localhost:3000/entrar"
+          className="text-cinzaEscuro text-sm font-semibold "
+        >
           Entrar
         </Link>
       </div>
