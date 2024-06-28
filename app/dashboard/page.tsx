@@ -1,12 +1,18 @@
+"use client"
 import React from 'react'
-import { HeaderApp } from '../_components/headers/HeaderApp'
+import Sidebar from '../_components/sidebar/Sidebar'
 
 const Dashboard = () => {
-  return (
-    <>
-        <HeaderApp/>
 
-    </>
+  return (
+    <div className='flex'>
+
+    <Sidebar/>
+
+    <div className='p-7'>
+     <h1 className='text-2xl font-semibold'>Dashboard</h1>
+    </div>
+          </div>
   )
 }
 

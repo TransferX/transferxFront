@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderLandingPage } from "../_components/headers/HeaderLandingPage";
+import { HeaderLandingPage } from "../_components/headers/Header;
 import LoginForm from "../_components/loginForm/page";
 import CadastroForm from "../_components/cadastroForm/page";
 

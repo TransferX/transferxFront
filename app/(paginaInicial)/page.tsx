@@ -1,5 +1,4 @@
 import React from "react";
-import { HeaderLandingPage } from "../_components/headers/HeaderLandingPage";
 import Image from "next/image";
 
 import volcanoImage from "/public/assets/volcano.png";
@@ -10,11 +9,12 @@ import veiculoIcone from "/public/assets/veiculoIcon.svg";
 import documentoIcone from "/public/assets/documentoIcon.svg";
 import concluirIcone from "/public/assets/concluirIcon.svg";
 import Link from "next/link";
+import { Header } from "../_components/header/Header";
 
 const Home = () => {
   return (
     <>
-      <HeaderLandingPage />
+      <Header />
 
       <section className="flex flex-col items-center p-4 md:container md:mx-auto md:p-0 md:mt-14 lg:flex-row lg:justify-between lg:container lg:mx-auto lg:items-start xl:gap-24 ">
         <div className="lg:max-w-[50%] lg:p-4">
