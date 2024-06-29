@@ -14,7 +14,8 @@ const config: Config = {
       cinzaEscuro: "#1a1a1a",
       branco : "#F4F4F4",
       cinzaClaro: "#8D8D8D",
-      bordaFormulario: "#E5E5E5"
+      bordaFormulario: "#E5E5E5",
+      verdeSucesso: "#1AD598"
 
      }
     },
