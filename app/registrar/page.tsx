@@ -1,12 +1,11 @@
 import React from "react";
-import { HeaderLandingPage } from "../_components/headers/Header;
-import LoginForm from "../_components/loginForm/page";
+import { Header } from "../_components/header/Header"
 import CadastroForm from "../_components/cadastroForm/page";
 
 const Registrar = () => {
   return (
     <>
-      <HeaderLandingPage />
+      <Header />
 
       <section className="m-4 p-4 border-2 border-bordaFormulario rounded-2xl  lg:container lg:mx-auto lg:max-w-[680px] md:my-14">
         <h2 className=" my-2 font-extrabold text-cinzaMedio text-2xl ">
