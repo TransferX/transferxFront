@@ -2,7 +2,7 @@ import React from 'react'
 
 interface InputProps{
 placeholder: string;
-label:string;
+label?:string;
 name:string;
 id:string;
 type: string;

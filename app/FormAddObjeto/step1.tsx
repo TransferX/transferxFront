@@ -5,10 +5,10 @@ import Input from "../_components/ui/Input";
 const Step1 = () => {
   return (
     <div>
-      <h3 className="mt-6 text-cinzaEscuro font-bold text-xl">Informações do Veículo</h3>
-      <p className="text-gray-600 max-w-[80%] mb-6 mt-3">Esses serão as informações do veículo, onde você terá posse.</p>
+      <h3 className="text-cinzaEscuro font-bold text-md">Informações do Veículo</h3>
+      <p className="text-gray-600">Esses serão as informações do veículo, onde você terá posse.</p>
 
-      <div className="md:flex w-full gap-4 mb-2">
+      <div className="md:flex w-full">
         <div className="md:flex-1">
           <Input
             label="Modelo"
@@ -16,7 +16,6 @@ const Step1 = () => {
             id="modelo"
             name="modelo"
             type="text"
-            className="py-3"
           />
         </div>
        
@@ -30,7 +29,6 @@ const Step1 = () => {
             id="marca"
             name="marca"
             type="marca"
-             className="py-3"
           />
         </div>
         <div className="md:flex-1">
@@ -40,7 +38,7 @@ const Step1 = () => {
             id="ano"
             name="ano"
             type="text"
-             className="py-3"
+          
           />
         </div>
       </div>
@@ -53,17 +51,17 @@ const Step1 = () => {
             id="Categoria"
             name="Categoria"
             type="text"
-             className="py-3"
+          
           />
         </div>
-        <div className="md:flex-1">
+        <div className="md:flex-1 mb-8">
           <Input
             label="Tipo"
             placeholder="Digite o Tipo do Veículo"
             id="tipoVeiculo"
             name="tipoVeiculo"
             type="text"
-             className="py-3"
+
           />
         </div>
       </div>
