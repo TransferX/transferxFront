@@ -41,7 +41,7 @@ const Dashboard = () => {
               </p>
               <button
                 className="bg-green-500 text-white mt-6 px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center mx-auto"
-                onClick={handleOpenModal}
+                
               >
                 Adicionar Veículo
                 <svg
@@ -64,7 +64,7 @@ const Dashboard = () => {
 
           <section className="bg-white rounded-2xl p-6 shadow-md flex flex-col justify-center">
             <div className="flex flex-col lg:flex-row justify-between items-center">
-              <span className="text-gray-700 lg:max-w-md mb-4 lg:mb-0 text-center lg:text-left ">
+              <span className="text-gray-700 lg:max-w-4xl mb-4 lg:mb-0 text-center lg:text-left ">
                 Insira o ID do veículo para iniciar o processo de transferência
                 para sua propriedade. Após a inserção, o proprietário avaliará
                 sua solicitação.
