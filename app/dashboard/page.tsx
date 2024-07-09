@@ -20,8 +20,12 @@ const Dashboard = () => {
     setIsModalOpen(false);
   };
 
-  const steps = [<Step1 />, <Step2 />, <Step3 />, <Step4 />];
-
+  const steps = [
+    <Step1 key="step1" />,
+    <Step2 key="step2" />,
+    <Step3 key="step3" />,
+    <Step4 key="step4" />
+  ];
   return (
     <div className="flex">
       <Sidebar />
