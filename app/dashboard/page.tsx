@@ -31,7 +31,7 @@ const Dashboard = () => {
       <Sidebar />
       <div className="flex-1 flex flex-col min-h-screen p-4 mt-16 lg:mt-0 sm:p-6 lg:p-8 bg-gray-100 ml-0 ">
         <div className="flex-1 grid grid-cols-1 gap-8">
-          <section className="bg-white rounded-2xl p-6 shadow-md flex flex-col justify-center">
+          <section className="bg-white rounded-2xl p-4 shadow-md flex flex-col justify-center">
             <h3 className="font-bold text-gray-700 mb-4">Meus Veículos</h3>
             <div className="text-center">
               <h3 className="font-extrabold text-2xl text-gray-700">OPS...</h3>
@@ -62,9 +62,9 @@ const Dashboard = () => {
             </div>
           </section>
 
-          <section className="bg-white rounded-2xl p-6 shadow-md flex flex-col justify-center">
+          <section className="bg-white rounded-2xl p-4 shadow-md flex flex-col justify-center">
             <div className="flex flex-col lg:flex-row justify-between items-center">
-              <span className="text-gray-700 lg:max-w-4xl mb-4 lg:mb-0 text-center lg:text-left ">
+              <span className="text-gray-700 lg:max-w-4xl mb-4  lg:mb-0 text-center lg:text-left ">
                 Insira o ID do veículo para iniciar o processo de transferência
                 para sua propriedade. Após a inserção, o proprietário avaliará
                 sua solicitação.
@@ -79,7 +79,7 @@ const Dashboard = () => {
                 />
 
                 <button className="bg-green-500 text-white  md:mt-0 md:ml-4 p-2 rounded-lg hover:bg-green-600 flex items-center ">
-                  Solicitar transferência
+                  Solicitar 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -99,7 +99,7 @@ const Dashboard = () => {
             </div>
           </section>
 
-          <section className="bg-white rounded-2xl p-6 shadow-md flex flex-col justify-center">
+          <section className="bg-white rounded-2xl p-4 shadow-md flex flex-col justify-center">
             <h3 className="font-bold text-gray-700 mb-4">
               Solicitações de Transferências
             </h3>

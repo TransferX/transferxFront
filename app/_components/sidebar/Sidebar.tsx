@@ -10,20 +10,22 @@ import {
   BiHelpCircle,
   BiExit,
 } from "react-icons/bi";
+import Link from 'next/link';
 
 type MenuItem = {
   icon: JSX.Element;
   title: string;
+  path: string;
 };
 
 const Menus: MenuItem[] = [
-  { title: "Dashboard", icon: <BiSolidDashboard /> },
-  { title: "Transferências", icon: <BiTransfer /> },
-  { title: "Validar Selo", icon: <BiQrScan /> },
-  { title: "Notificações", icon: <BiBell /> },
-  { title: "Configurações", icon: <BiWrench /> },
-  { title: "Ajuda", icon: <BiHelpCircle /> },
-  { title: "Sair", icon: <BiExit /> },
+  { title: "Dashboard", icon: <BiSolidDashboard />, path: "/dashboard" },
+  { title: "Transferências", icon: <BiTransfer />, path: "/transferencias" },
+  { title: "Validar Selo", icon: <BiQrScan />, path: "/dashboard" },
+  { title: "Notificações", icon: <BiBell />, path: "/dashboard" },
+  { title: "Configurações", icon: <BiWrench />, path: "/dashboard" },
+  { title: "Ajuda", icon: <BiHelpCircle />, path: "/dashboard" },
+  { title: "Sair", icon: <BiExit />, path: "/dashboard" },
 ];
 
 const MobileMenu: React.FC = () => {
@@ -89,8 +91,9 @@ const MobileMenu: React.FC = () => {
               key={index}
               className="text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-white bg-opacity-20 rounded-md mt-2"
             >
+             
               <span className="text-2xl block float-left">{menu.icon}</span>
-              <span className="text-base font-medium flex-1">{menu.title}</span>
+              <Link href={menu.path}>{menu.title}</Link>
             </li>
           ))}
         </ul>

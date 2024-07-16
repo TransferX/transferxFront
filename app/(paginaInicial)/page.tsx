@@ -179,7 +179,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mt-20 p-2 md:container md:mx-auto md:max-w-[50%]">
+      <section className="mt-20 p-2 md:container md:mx-auto md:max-w-[70%]">
         <div className="bg-gradient-to-r from-black/35 to-cinzaEscuro rounded-2xl  p-4">
           <div className=" flex justify-between">
             <h2 className="mt-2 font-extrabold text-white text-2xl lg:text-4xl">
