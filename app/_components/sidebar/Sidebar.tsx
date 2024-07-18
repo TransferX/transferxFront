@@ -21,11 +21,11 @@ type MenuItem = {
 const Menus: MenuItem[] = [
   { title: "Dashboard", icon: <BiSolidDashboard />, path: "/dashboard" },
   { title: "Transferências", icon: <BiTransfer />, path: "/transferencias" },
-  { title: "Validar Selo", icon: <BiQrScan />, path: "/dashboard" },
-  { title: "Notificações", icon: <BiBell />, path: "/dashboard" },
-  { title: "Configurações", icon: <BiWrench />, path: "/dashboard" },
-  { title: "Ajuda", icon: <BiHelpCircle />, path: "/dashboard" },
-  { title: "Sair", icon: <BiExit />, path: "/dashboard" },
+  { title: "Validar Selo", icon: <BiQrScan />, path: "/validar" },
+  { title: "Notificações", icon: <BiBell />, path: "/notificacoes" },
+  { title: "Configurações", icon: <BiWrench />, path: "/configuracoes" },
+  { title: "Ajuda", icon: <BiHelpCircle />, path: "/ajuda" },
+  { title: "Sair", icon: <BiExit />, path: "/" },
 ];
 
 const MobileMenu: React.FC = () => {
