@@ -20,6 +20,13 @@ const Dashboard = () => {
     setIsModalOpen(false);
   };
 
+
+
+
+  const handleFinish = () => {
+    handleCloseModal();
+  };
+
   const steps = [
     <Step1 key="step1" />,
     <Step2 key="step2" />,
@@ -41,7 +48,7 @@ const Dashboard = () => {
               </p>
               <button
                 className="bg-green-500 text-white mt-6 px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center mx-auto"
-                
+                onClick={handleOpenModal}
               >
                 Adicionar Veículo
                 <svg
@@ -115,7 +122,11 @@ const Dashboard = () => {
         </div>
 
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-          <MultistepForm steps={steps} />
+        <MultistepForm 
+            steps={steps} 
+            onFinish={handleFinish} 
+            onClose={handleCloseModal}
+          />
         </Modal>
       </div>
     </div>
