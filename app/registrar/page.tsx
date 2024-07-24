@@ -1,8 +1,15 @@
-import React from "react";
+"use client"
 import { Header } from "../_components/header/Header"
-import CadastroForm from "../_components/cadastroForm/page";
+import MultistepForm from "../_components/forms/MultistepForm";
+import PersonalDataStep from "../_components/forms/cadastroForm/PersonalDetailsStep";
+import AddressDataStep from "../_components/forms/cadastroForm/AddressDetailsStep";
 
 const Registrar = () => {
+
+  const handleFinish = () => {
+    alert('Formulário enviado!');
+  };
+
   return (
     <>
       <Header />
@@ -14,7 +21,13 @@ const Registrar = () => {
         <span className="text-cinzaClaro text-sm mt-5">
         Comece sua jornada TransferX se registrando conosco
         </span>
-        <CadastroForm />
+       
+        <MultistepForm
+        steps={[<PersonalDataStep key="personalData" />, <AddressDataStep key="addressData" />]}
+        onFinish={handleFinish}
+        showFinishButton={true}
+      />
+
       </section>
     </>
   );

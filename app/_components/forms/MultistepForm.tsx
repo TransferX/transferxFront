@@ -1,13 +1,13 @@
+"use client"
 import { useState, ReactNode } from 'react';
 
 interface MultistepFormProps {
   steps: ReactNode[];
   onFinish: () => void;
   showFinishButton?: boolean;
-  onClose: () => void; // Função para fechar o modal
 }
 
-const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFinishButton = true, onClose }) => {
+const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFinishButton = true }) => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const nextStep = () => {
@@ -15,11 +15,7 @@ const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFini
   };
 
   const prevStep = () => {
-    if (currentStep === 0) {
-      onClose(); // Fechar o modal se estiver na primeira etapa
-    } else {
-      setCurrentStep((prev) => (prev > 0 ? prev - 1 : prev));
-    }
+    setCurrentStep((prev) => (prev > 0 ? prev - 1 : prev));
   };
 
   return (
@@ -31,6 +27,7 @@ const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFini
             type="button"
             onClick={prevStep}
             className="bg-vermelho text-white px-6 py-2 rounded-full shadow-md"
+            disabled={currentStep === 0}
           >
             Voltar
           </button>

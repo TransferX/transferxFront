@@ -1,13 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Sidebar from "../_components/sidebar/Sidebar";
-import Step1 from "../FormAddObjeto/step1";
-import Step2 from "../FormAddObjeto/step2";
-import Step3 from "../FormAddObjeto/step3";
-import Step4 from "../FormAddObjeto/step4";
+
 import Input from "../_components/ui/Input";
 import Modal from "../_components/ui/Modal";
-import MultistepForm from "../FormAddObjeto/MultistepForm";
 
 const Dashboard = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,16 +19,6 @@ const Dashboard = () => {
 
 
 
-  const handleFinish = () => {
-    handleCloseModal();
-  };
-
-  const steps = [
-    <Step1 key="step1" />,
-    <Step2 key="step2" />,
-    <Step3 key="step3" />,
-    <Step4 key="step4" />
-  ];
   return (
     <div className="flex">
       <Sidebar />
@@ -122,11 +108,7 @@ const Dashboard = () => {
         </div>
 
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-        <MultistepForm 
-            steps={steps} 
-            onFinish={handleFinish} 
-            onClose={handleCloseModal}
-          />
+          <h1>Formulário de Cadastrar produto</h1>
         </Modal>
       </div>
     </div>
