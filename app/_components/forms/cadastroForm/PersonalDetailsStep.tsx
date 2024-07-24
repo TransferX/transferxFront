@@ -1,32 +1,50 @@
-import React from 'react';
+import Input from "../../ui/Input";
 
 const PersonalDataStep = () => (
   <div>
-    <h2>Dados Pessoais</h2>
-    <label>
-      Nome:
-      <input type="text" name="firstName" className="border p-2 rounded w-full" />
-    </label>
-    <label>
-      Sobrenome:
-      <input type="text" name="lastName" className="border p-2 rounded w-full" />
-    </label>
-    <label>
-      E-mail:
-      <input type="email" name="email" className="border p-2 rounded w-full" />
-    </label>
-    <label>
-      CPF:
-      <input type="text" name="cpf" className="border p-2 rounded w-full" />
-    </label>
-    <label>
-      Senha:
-      <input type="password" name="password" className="border p-2 rounded w-full" />
-    </label>
-    <label>
-      Confirmar Senha:
-      <input type="password" name="confirmPassword" className="border p-2 rounded w-full" />
-    </label>
+  <h6 className=" font-extrabold text-cinzaMedio text-1xl ">Dados Pessoais</h6>
+    <Input
+      label="Nome"
+      placeholder="Digite seu Nome"
+      id="nome"
+      name="nome"
+      type="nome"
+    />
+    <Input
+      label="Sobrenome"
+      placeholder="Digite seu Sobrenome"
+      id="sobrenome"
+      name="sobrenome"
+      type="sobrenome"
+    />
+    <Input
+      label="E-mail"
+      placeholder="Digite seu E-mail"
+      id="E-mail"
+      name="E-mail"
+      type="E-mail"
+    />
+    <Input
+      label="CPF"
+      placeholder="Digite seu CPF"
+      id="cpf"
+      name="cpf"
+      type="cpf"
+    />
+    <Input
+      label="Senha"
+      placeholder="Digite sua Senha"
+      id="senha"
+      name="senha"
+      type="senha"
+    />
+    <Input
+      label="Confirmar senha"
+      placeholder="Confirme sua Senha"
+      id="confirmarSenha"
+      name="confirmarSenha"
+      type="confirmarSenha"
+    />
   </div>
 );
 

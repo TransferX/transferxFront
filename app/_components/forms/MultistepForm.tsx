@@ -26,7 +26,7 @@ const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFini
           <button
             type="button"
             onClick={prevStep}
-            className="bg-vermelho text-white px-6 py-2 rounded-full shadow-md"
+            className="bg-cinzaClaro text-white px-6 py-2 rounded-full shadow-md"
             disabled={currentStep === 0}
           >
             Voltar
