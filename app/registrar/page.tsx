@@ -1,8 +1,8 @@
 "use client"
 import { Header } from "../_components/header/Header"
 import MultistepForm from "../_components/forms/MultistepForm";
-import PersonalDataStep from "../_components/forms/cadastroForm/PersonalDetailsStep";
-import AddressDataStep from "../_components/forms/cadastroForm/AddressDetailsStep";
+import PersonalDataStep from "../_components/forms/registerUserForm/PersonalDetailsStep";
+import AddressDataStep from "../_components/forms/registerUserForm/AddressDetailsStep";
 
 const Registrar = () => {
 

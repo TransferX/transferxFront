@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../ui/Input";
+import Input from "../../ui/Input";
 import Link from "next/link";
 
 const LoginForm = () => {

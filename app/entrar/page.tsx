@@ -1,5 +1,5 @@
 import React from "react";
-import LoginForm from "../_components/loginForm/page";
+import LoginForm from "../_components/forms/loginForm/page";
 import { Header } from "../_components/header/Header";
 
 

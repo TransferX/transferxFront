@@ -5,9 +5,10 @@ interface MultistepFormProps {
   steps: ReactNode[];
   onFinish: () => void;
   showFinishButton?: boolean;
+  className?: string;
 }
 
-const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFinishButton = true }) => {
+const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFinishButton = true, className }) => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const nextStep = () => {
@@ -19,7 +20,7 @@ const MultistepForm: React.FC<MultistepFormProps> = ({ steps, onFinish, showFini
   };
 
   return (
-    <section className="flex flex-col m-4 md:max-w-[820px]">
+    <section className={`flex flex-col m-4 md:max-w-[820px] ${className}`}>
       <form>
         {steps[currentStep]}
         <div className="flex justify-between mt-4">
