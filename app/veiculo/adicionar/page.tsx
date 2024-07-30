@@ -34,10 +34,10 @@ const Dashboard = () => {
             <h2 className="my-2 font-extrabold text-cinzaMedio text-2xl">
               Registrar Veículo
             </h2>
-            <span className="text-cinzaClaro text-sm mt-5">
+            <span className="text-cinzaClaro text-sm ">
               Comece sua jornada TransferX registrando seu Veículo conosco
             </span>
-            <MultistepForm
+            <MultistepForm 
               steps={[
                 <ObjectDetailsStep key="ObjectDetailsStep" />,
                 <ObjectCharacteristicsStep key="ObjectCharacteristicsStep" />,
