@@ -5,18 +5,12 @@ const PersonalDataStep = () => (
   <h6 className=" font-extrabold text-cinzaMedio text-1xl ">Dados Pessoais</h6>
     <Input
       label="Nome"
-      placeholder="Digite seu Nome"
+      placeholder="Digite seu Nome Completo"
       id="nome"
       name="nome"
       type="nome"
     />
-    <Input
-      label="Sobrenome"
-      placeholder="Digite seu Sobrenome"
-      id="sobrenome"
-      name="sobrenome"
-      type="sobrenome"
-    />
+
     <Input
       label="E-mail"
       placeholder="Digite seu E-mail"
