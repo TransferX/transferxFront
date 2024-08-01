@@ -30,7 +30,7 @@ const Dashboard = () => {
       <Sidebar />
       <div className="flex-1 flex flex-col min-h-screen p-4 mt-16 lg:mt-0 sm:p-6 lg:p-8 bg-gray-100 ml-0">
         <div className="flex-1 flex flex-col items-center justify-center">
-          <section className="bg-white rounded-2xl p-4 shadow-md flex flex-col justify-center w-full max-w-3xl mx-auto lg:w-2/3 xl:w-1/2">
+          <section className="bg-white rounded-2xl p-4 shadow-md flex flex-col justify-center w-full max-w-4xl mx-auto lg:w-2/3 ">
             <h2 className="my-2 font-extrabold text-cinzaMedio text-2xl">
               Registrar Veículo
             </h2>

@@ -100,7 +100,7 @@ const ObjectModificationsStep = () => {
         <button
           onClick={() => setShowForm(true)}
           type='button'
-          className="bg-blue-500 text-white p-2 rounded flex items-center"
+          className="bg-white text-cinzaEscuro p-2 rounded flex items-center"
         >
           <FaPlus className="mr-2" /> Adicionar Modificação
         </button>
@@ -114,8 +114,6 @@ const ObjectModificationsStep = () => {
             id="component"
             name="component"
             type="text"
-            value={newModification.component}
-            onChange={(e) => setNewModification({ ...newModification, component: e.target.value })}
           />
           <Input
             label="Descrição"
@@ -123,14 +121,13 @@ const ObjectModificationsStep = () => {
             id="description"
             name="description"
             type="text"
-            value={newModification.description}
-            onChange={(e) => setNewModification({ ...newModification, description: e.target.value })}
+          
           />
           <div className="flex space-x-4 mt-2">
-            <button onClick={handleAdd} className="bg-green-500 text-white p-2 rounded">
+            <button onClick={handleAdd} className="bg-vermelho/90 text-white p-2 rounded">
               {editId === null ? 'Adicionar' : 'Salvar'}
             </button>
-            <button onClick={() => setShowForm(false)} className="bg-gray-500 text-white p-2 rounded">
+            <button onClick={() => setShowForm(false)} className="bg-cinzaClaro text-white p-2 rounded">
               Cancelar
             </button>
           </div>

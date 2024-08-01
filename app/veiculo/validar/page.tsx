@@ -1,5 +1,5 @@
 "use client"
-import Sidebar from "../_components/sidebar/Sidebar";
+import Sidebar from "../../_components/sidebar/Sidebar";
 
 const ValidarSelo = () => {
   return (
